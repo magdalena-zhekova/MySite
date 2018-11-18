@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{{ site.title }}</title>
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" type="text/css" />
+	</head>
+	<body class="{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}">
+        <div class="site">
+
+			<p>My Site</p>
+
+            
+        </div>
+    </body>
+</html>
