@@ -1,0 +1,84 @@
+body {
+	background: var(--background, rgb(255, 255, 255));
+}
+
+.site{
+	.div-header {
+		display:flex;
+		justify-content: space-between;
+	  }
+
+	  	#{&}-logo {
+	   		width: 10%;
+			text-align:left ;
+
+			img {
+				width: 135%;
+			}
+	  	}
+	  
+	&-branding {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: static;
+		top: 0; left: 0;
+		width: 100%;
+		padding: var(--spacing-site) 0 4rem 0;
+		@include background-image("luxury-home.jpg", center, contain); 
+		
+
+		p{
+			width: 48rem;
+			text-align: center;
+			color: white;
+		}
+
+		& section.options {
+			width: 60rem;
+			display: flex;
+			flex-wrap: wrap;
+			flex: 1 0 auto;
+			justify-content: space-between;
+			padding-top: 35px;
+	
+			& article {
+				text-align: center;
+				border-top: 2px solid white;
+				padding-bottom: 20px;
+			}
+		
+			& article h4 {
+				color: white;
+				padding: 20px 15px 20px 15px;
+				font-weight: inherit;
+				font-size: 25px;
+			}
+		
+			& a {
+				color: white;
+				font-weight: lighter;
+				font-size: 16px;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&-title {
+		font-size: 1.8em;
+		padding-bottom: 0.5rem;
+		margin-bottom: 0.5rem;
+		border-bottom: 2px solid #DDD;
+
+		& a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+
+	&-description {
+		font-style: italic;
+		font-family: serif;
+		font-size: 110%;
+	}
+}

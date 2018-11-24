@@ -1,0 +1,10 @@
+
+// define the base path before the mixin
+$path--rel: "../img"; 
+
+@mixin background-image($img, $background-position, $background-size) {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('#{$path--rel}/#{$img}');
+    background-repeat: no-repeat;
+    background-position: $background-position;
+
+} 

@@ -2,15 +2,80 @@
 layout: my-site
 ---
 
+    <h2>Gallery</h2>
+    <section class="gallery">
+        <article>
+            <p>Glass Table</p>
+            <img src="img/glass-1.jpg" alt="room">
+            <div>
+            <a href="#">View More ..</a>
+            </div>
+        </article>
+        <article>
+            <p>Glass Bathroom</p>
+            <img src="img/glass-2.png" alt="room">
+            <div>
+            <a href="#">View More ..</a>
+            </div>
+        </article>
+        <article>
+            <p>Glassworks</p>
+            <img src="img/glass-3.jpg" alt="room">
+            <div>
+            <a href="#">View More ..</a>
+            </div>
+        </article>
+    </section>
+    <section class="blog">
+        <div class="blog-title">
+        <h4>LUXURY PORTFOLIO<SPAN>BLOG</SPAN></h4>
+        <a href="#">GO THERE  ></a>
+        </div>
+        <article>
+            <div id="about-blog">
+            <h3>LUXURY PORTFOLIO AND MANSION GLOBAL HOST "A NIGHT IN SOHO"</h3>
+            <p>On Tuesday, April 3, 2018 Luxury Portfolio and Mansion Global co-hosted
+                “A Night in Soho” in one of Manhattan’s premier penthouses at One Vandam
+                listed by Stribling & Associates. The event was the perfect opportunity to
+                highlight the potential to entertain 100+ people in this, the last penthouse
+                available in the building. The three-story space highlighted the best of SoHo
+                including the incredible architecture and the high-end food and entertainment
+                found in the area.</p>
+            <button>Read More...</button>
+            </div>
+            <img src="img/blog-pic.JPG" alt="blog-pic">
+        </article>
+    </section>
+    <section class="magazine">
+        <div class="magazine-title">
+            <h4>LUXURY PORTFOLIO<SPAN>MAGAZINE</SPAN></h4>
+            <a href="#">READ IT  ></a>
+        </div>
+        <article>
+			<img id="magazine-img" src="images/luxury-magazine.jpg" alt="magazine">
+			
+			<ul class="listing posts">
+				{% for post in site.posts %}
+				<li>
+					<a href="{{ site.baseurl }}{{ post.url }}">
+						<span class="title">{{ post.title }}</span>
+						<span class="date">{{ post.date | date_to_string }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
 
+            <div class="magazine-info">
+                <h2>LOOK INSIDE</h2>
+                <img src="img/room-5.jpg" alt="magazine-inside">
+                <h3>LUXURY EXPOUNDED ON FAR & WIDE</h3>
+                <p>We know a commitment at this level requires a rock-solid relationship
+                    with experts who truly understand worldwide markets, and with our
+                    established leaders in over 60 countries, you can rest assured.
+                    As a global network with 50 years of proven results, our members are
+                    more than comfortable. Email us today for a free copy.</p>
+                <button>View the magazine</button>
+            </div>
+        </article>
+	</section>
 
-<ul class="listing posts">
-	{% for post in site.posts %}
-	<li>
-		<a href="{{ site.baseurl }}{{ post.url }}">
-			<span class="title">{{ post.title }}</span>
-			<span class="date">{{ post.date | date_to_string }}</span>
-		</a>
-	</li>
-	{% endfor %}
-</ul>
