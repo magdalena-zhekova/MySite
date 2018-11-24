@@ -51,8 +51,7 @@ ul.info {
 	li {
 		display: flex;
 		padding-right: 5px;
-		list-style: none;
-		padding: 1em;
+		@include liProperty;
 		animation: navtogglein 0.5s 1 ease-in-out forwards;
 	}
 

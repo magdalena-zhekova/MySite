@@ -8,3 +8,7 @@ $path--rel: "../img";
     background-position: $background-position;
 
 } 
+@mixin liProperty {
+    list-style: none;
+	padding: 1em;
+}

@@ -1,4 +1,22 @@
 .site-footer {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: black;
+    padding: 20px 20px;
+    color: white;
+    font-weight: lighter;
 
+    ul.icons{
+        display: flex;
+
+    }
+    li{
+        @include liProperty;
+    }
+    i {
+        color: white;
+    }
 }
 
