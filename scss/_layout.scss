@@ -1,10 +1,11 @@
 body {
 	color: var(--color-text-main, red);
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .site {
 	@at-root #{&}-content {
-		max-width: 60rem;
+		max-width: 76rem;
 		margin: 0 auto;
 	}
 }
@@ -12,6 +13,52 @@ body {
 main{
 	padding: var(--spacing-site, 2em);
 
+	>h2 {
+		font-family: 'Great Vibes', cursive;
+		font-size: 70px;
+		text-align: center;
+		letter-spacing: 2px;
+		padding: 13px 0;
+	}
+	.gallery {
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		padding-bottom: 85px;
+	  
+		article{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+	    a {
+			font-weight: bold;
+			border: 1px solid gray;
+			padding: 5px 10px;
+			margin-top: 25px;
+			font-size: 12px;
+			color: black;
+			text-decoration: none;
+		}
+		  
+		.container{
+			@include imgContainer;
+		
+		 	img{
+				width: 100%;
+				height: auto;
+				margin: 0.5rem 0.5rem 2rem 0.5rem;
+			}
+		}
+		  
+	 	p {
+			text-align: center;
+			padding-bottom: 15px;
+			font-style: italic;
+	  	}
+	}
 }
 
 body.login {

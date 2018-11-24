@@ -12,3 +12,10 @@ $path--rel: "../img";
     list-style: none;
 	padding: 1em;
 }
+
+@mixin imgContainer {
+    width: 320px;
+    height: 330px;
+    overflow: hidden;
+    text-align: center;
+}

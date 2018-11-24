@@ -42,16 +42,16 @@
 }
 
 ul.info {
-	display: flex;
+	//display: flex;
 	padding: 0;
 	position: fixed;
-	top: var(--spacing-site, 2rem);
+	top: 2rem;
 	right: var(--spacing-site, 2rem);
 
 	li {
 		display: flex;
-		padding-right: 5px;
 		@include liProperty;
+		padding: 10px;
 		animation: navtogglein 0.5s 1 ease-in-out forwards;
 	}
 
@@ -62,9 +62,9 @@ ul.info {
 		padding: 0;
 	}
 
-  	i.fa {
+  	i{
 	font-size: 20px;
-	padding: 2px 5px 0 5px;
+	padding: 2px 7px 0 7px;
 	}
 
 }
