@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background: black;
+    @include background-image("footer.jpg", center, contain);
+    background-repeat: repeat;
     padding: 20px 20px;
     color: white;
     font-weight: lighter;
@@ -14,6 +15,7 @@
     }
     li{
         @include liProperty;
+        
     }
     i {
         color: white;

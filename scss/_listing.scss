@@ -1,6 +1,6 @@
 .listing {
 	padding: 0;
-	margin: 0;
+	margin-top: 3em;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -8,20 +8,29 @@
 	li {
 		display: block;
 		@include liProperty;
+		margin-top: 2em;
 		flex: 0 0 31%;
+		@include background-image("post3.jpg", center, cover);
+		border-radius: 0.3em;
+	}
+
+	li:nth-child(2){
+		@include background-image("post2.jpg", left center, cover);
+	}
+
+	li:nth-child(3){
+		@include background-image("post1.jpg", left center, contain);
 	}
 
 	a {
 		display: block;
-		background: #fff;
-		border-radius: 0.3em;
-		color: #333;
+		color: white;
 		text-decoration: none;
 		padding: 1rem 1.5rem;
 		position: relative;
 		transition: background 0.3s ease-in, color 0.3s ease-in;
 		box-shadow: 0 0 1rem 0 rgba(#000,0.2);
-		
+
 		&:before {
 			display: block;
 			content: '';
@@ -30,12 +39,11 @@
 			top: 0; left: 0; right: 0; bottom: 0;
 			opacity: 0;
 			transition: opacity 0.3s ease-in;
-			box-shadow: 0 0 5rem 0.9rem rgba(#000,0.4);
+			box-shadow: 0 0 5rem 0.9rem rgba(black,0.4);
 		}
 
 		&:hover {
-			background: #333;
-			color: #FFF;
+			box-shadow: 0 0 5rem 2rem rgba(black,0.4);
 			
 			&:before {
 				opacity: 1;

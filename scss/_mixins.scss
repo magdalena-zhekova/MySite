@@ -6,11 +6,12 @@ $path--rel: "../img";
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('#{$path--rel}/#{$img}');
     background-repeat: no-repeat;
     background-position: $background-position;
+    background-size: $background-size;
 
 } 
 @mixin liProperty {
     list-style: none;
-	padding: 1em;
+	padding: 0 1em;
 }
 
 @mixin imgContainer {

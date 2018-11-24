@@ -3,6 +3,7 @@ layout: my-site
 title:  "REMODELLING A CLASSIC"
 date:   2017-11-14 19:52:15 +0200
 type: post
+post: remodelling
 ---
 
 <h2>

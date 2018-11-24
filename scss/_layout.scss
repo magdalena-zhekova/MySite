@@ -11,11 +11,9 @@ body {
 }
 
 main{
-	//padding: var(--spacing-site, 2em);
+	padding: 15px;
 
 	>h2 {
-		font-family: 'Great Vibes', cursive;
-		font-size: 70px;
 		text-align: center;
 		letter-spacing: 2px;
 		padding: 13px 0;
@@ -146,7 +144,7 @@ main{
 
 	  	article {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			margin-top: 35px;
 
 			#magazine-img {
@@ -156,14 +154,22 @@ main{
 			}
 
 			.magazine-info{
-				margin-left: 150px;
+				margin-left: 5rem;
+				text-align: center;
 
 				img {
-					width: 300px;
-					height: 279px;
+					width: 400px;
+					height: auto;
 				}
 			}
 		}		  
+	}
+}
+
+body.home{
+	main>h2{
+		font-family: 'Great Vibes', cursive;
+		font-size: 70px;
 	}
 }
 

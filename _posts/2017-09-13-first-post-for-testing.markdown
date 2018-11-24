@@ -1,9 +1,12 @@
 ---
 layout: my-site
-title:  "Everything You Need To Know About Traditional Design"
+title:  "Traditional Design"
 date:   2017-09-13 19:52:15 +0200
 type: post
+post: traditional
 ---
+
+<h2>Everything You Need To Know About Traditional Design"</h2>
 
 <p>
 You might tend to shy away from traditional design out of fear that it's boring, predictable, stuffy—and it totally can be. But some of its facets are truly interesting, and since it incorporates a lot of antiques, traditional design gives the opportunity to stumble upon some pretty cool pieces. But what exactly makes something "traditional" and just how far back does traditional go? We'll tell you everything you need to know, and maybe you'll be convinced that traditional doesn't always equal staid.
