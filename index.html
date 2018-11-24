@@ -29,21 +29,21 @@ layout: my-site
     <section class="blog">
         <div class="blog-title">
         <h4>Beautiful House PORTFOLIO<SPAN>BLOG</SPAN></h4>
-        <a href="#">GO THERE  ></a>
+        <a href="https://www.housebeautiful.com/design-styles/">GO THERE  ></a>
         </div>
         <article>
-            <div id="about-blog">
-            <h3>Beautiful House PORTFOLIO AND MANSION GLOBAL HOST "A NIGHT IN SOHO"</h3>
-            <p>On Tuesday, April 23, 2018 Luxury Portfolio and Mansion Global co-hosted
-                “A Night in Soho” in one of Manhattan’s premier penthouses at One Vandam
+            <div class="about-blog">
+            <h3>Beautiful House PORTFOLIO AND MANSION GLOBAL host "101 tips from experts"</h3>
+            <p>On Tuesday, April 23, 2018 Luxury Portfolio and Mansion Global co-hosted at event
+                “101 tips from experts” in one of Manhattan’s premier penthouses at One Vandam
                 listed by Stribling & Associates. The event was the perfect opportunity to
                 highlight the potential to entertain 100+ people in this, the last penthouse
                 available in the building. The three-story space highlighted the best of SoHo
                 including the incredible architecture and the high-end food and entertainment
                 found in the area.</p>
-            <button>Read More...</button>
+            <button class="button purple">Read More...</button>
             </div>
-            <img src="img/blog-pic.JPG" alt="blog-pic">
+            <img src="img/magazine1.jpg" alt="blog-pic">
         </article>
     </section>
     <section class="magazine">
@@ -54,17 +54,6 @@ layout: my-site
         <article>
 			<img id="magazine-img" src="img/luxury-magazine.jpg" alt="magazine">
 			
-			<ul class="listing posts">
-				{% for post in site.posts %}
-				<li>
-					<a href="{{ site.baseurl }}{{ post.url }}">
-						<span class="title">{{ post.title }}</span>
-						<span class="date">{{ post.date | date_to_string }}</span>
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-
             <div class="magazine-info">
                 <h2>LOOK INSIDE</h2>
                 <img src="img/room-5.jpg" alt="magazine-inside">
@@ -74,8 +63,19 @@ layout: my-site
                     established leaders in over 60 countries, you can rest assured.
                     As a global network with 50 years of proven results, our members are
                     more than comfortable. Email us today for a free copy.</p>
-                <button>View the magazine</button>
+                <button class="button indigo">View the magazine</button>
             </div>
-        </article>
+		</article>
+		
+		<ul class="listing posts">
+				{% for post in site.posts %}
+				<li>
+					<a href="{{ site.baseurl }}{{ post.url }}">
+						<span class="title">{{ post.title }}</span>
+						<span class="date">{{ post.date | date_to_string }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
 	</section>
 
