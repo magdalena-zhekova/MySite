@@ -3,7 +3,8 @@ ul.grid {
     padding: 0;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
     
     li{
         list-style: none;
@@ -14,6 +15,30 @@ ul.grid {
             display: block;
             content: '';
             padding-top: 100%;
+        }
+
+        &.span-c2{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        &.span-c3{
+            grid-column: span 3;
+            &:before{
+                padding-top: 25%;
+            }
+        }
+
+        &.span-r2{
+            grid-row: span 2;
+        }
+
+        &.span-c4-r1{
+            grid-column: span 4;
+
+            &:before{
+                padding-top: 25%;
+            }
         }
     }
 
@@ -27,8 +52,8 @@ ul.grid {
         width: auto;
         height: 100%;
         position: absolute;
-        top: 50%; left: 0;
-        transform: translate(0, -50%);
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     li.img-p img{
