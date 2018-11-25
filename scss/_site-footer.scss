@@ -2,6 +2,7 @@
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
+    font-size: 2rem;
     text-align: center;
     @include background-image("footer.jpg", center, contain);
     background-repeat: repeat;

@@ -173,23 +173,41 @@ body.home{
 	}
 }
 
-body.login {
-	height: 100vh;
-	overflow: hidden;
-	padding-top: 0;
-	display: flex;
+body.reviews {
 
 	.site {
-		flex: 1 0 auto;
-		background: #EEE;
-		border: 4rem solid #FFF;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-		#{&}-header {
-			display: none;
+		@at-root #{&}-content {
+			max-width: 90rem;
+			margin: 0 auto;
 		}
 	}
 	
+	section.review{
+		animation: shake 0.5s 1 ease-in-out forwards;
+		color: rgb(180, 180, 180);
+		width: 100%;
+		margin: 5rem auto;
+		border-radius: 3px;
+		display: flex;
+		justify-content: space-between;
+
+		article{
+			//width: 50%;
+			padding: 5rem 2.3rem 1rem 4rem;
+
+			&.right {
+				width: 55%;
+				background-color: #FF3C6C;
+				clip-path: polygon(0% 8%,100% 0,100% 96%,0 92%);
+				border: 2px solid black;
+			}
+
+			&.left{
+				width: 45%;
+				@include background-image("opinion.jpg", center, cover); 
+				clip-path: polygon(0 0,100% 8%,100% 92%,0 96%);		
+				border: 2px solid black;
+			}
+		}
+	}
 }

@@ -3,7 +3,7 @@
 $path--rel: "../img"; 
 
 @mixin background-image($img, $background-position, $background-size) {
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('#{$path--rel}/#{$img}');
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('#{$path--rel}/#{$img}');
     background-repeat: no-repeat;
     background-position: $background-position;
     background-size: $background-size;
