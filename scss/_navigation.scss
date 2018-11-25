@@ -102,6 +102,7 @@ ul.info {
 
 #nav-main-toggle:checked + .site-header {
 
+	.info,
    	.navigation {
 		display: flex;
 		z-index: 1000;
@@ -112,7 +113,7 @@ ul.info {
 	}
 
 	.nav-toggle {
-		z-index: 1010;
+		z-index: 2000;
 		animation: jump 0.1s 1 ease-in-out forwards;
 	}
 }
