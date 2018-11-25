@@ -1,16 +1,38 @@
-.grid { 
+ul.grid {
+    margin: 4rem 0 0 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 1px;
-    align-items: start;
-    justify-items: center;
-    margin: auto;
-    width: 504px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 2fr);
+    
+    li{
+        list-style: none;
+        position: relative;
+        overflow: hidden;
+
+        &:before{
+            display: block;
+            content: '';
+            padding-top: 100%;
+        }
     }
-  .grid img {
-    max-width: 100%;
-  }
-  .grid img:nth-child(2) {
-    grid-column: span 3;
-    grid-row: span 3;
+
+    a{
+        display: block;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
     }
+    img{
+        display: block;
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 50%; left: 0;
+        transform: translate(0, -50%);
+    }
+
+    li.img-p img{
+        width: 100%;
+        height: auto;
+    }
+}
