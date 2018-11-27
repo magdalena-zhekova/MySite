@@ -6,7 +6,7 @@ body {
 
 .site {
 	@at-root #{&}-content {
-		max-width: 76rem;
+		max-width: 60rem;
 		margin: 0 auto;
 	}
 
@@ -17,13 +17,14 @@ main{
 	padding: 15px;
 	
 	a{
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	>h2{
 		text-align: center;
 		letter-spacing: 2px;
 		padding: 13px 0;
+		margin-top: 1rem;
 	}
 	.gallery {
 		padding: var(--spacing-site, 2em);
@@ -64,7 +65,6 @@ main{
 
 	.blog {
 		@include background-image("background-blog.jpg", center, cover);
-		padding-bottom: 35px;
 	
 		.blog-title {
 			display: flex;
@@ -75,7 +75,7 @@ main{
 	  	
 	 
 			h4 {
-	   			font-size: 50px;
+	   			font-size: 33px;
 				color: white;
 				font-weight: lighter;
 
@@ -101,14 +101,13 @@ main{
 			.about-blog{
 				background-color: white;
 				text-align: center;
-				margin: 3rem;
 				padding: 1rem;
-				width: 39%;
+				width: 50%;
 			}
 
 			img {
-				width: 35rem;
-    			height: 37rem;
+				width: 25rem;
+				height: 33rem;
     			border-radius: 9%;
 				margin-top: 45px;
 				margin-right: 15px;
@@ -118,7 +117,6 @@ main{
 	}
 
 	.magazine {
-		padding-top: 50px;
 	  
 	  	&-title {
 			display: flex;
@@ -128,7 +126,7 @@ main{
 			padding: 40px 0 0 0;
 
 	  		h4 {
-				font-size:  50px;
+				font-size:  33px;
 				color: black;
 				font-weight: lighter;
 
@@ -140,7 +138,6 @@ main{
 
 	  		a {
 				font-size: 30px;
-				padding-top: 35px;
 				text-decoration: none;
 				color: black;
 			}
@@ -152,7 +149,7 @@ main{
 			margin-top: 35px;
 
 			#magazine-img {
-				width: 60%;
+				width: 45%;
 				height: 20%;
 				border: 1px solid black;
 			}
@@ -162,7 +159,7 @@ main{
 				text-align: center;
 
 				img {
-					width: 400px;
+					width: 360px;
 					height: auto;
 				}
 			}
@@ -175,7 +172,7 @@ body.home{
 		margin-top: 1rem;
 		a{
 			font-family: 'Great Vibes', cursive;
-			font-size: 70px;
+			font-size: 55px;
 			text-decoration: none;
 			color: #000;
 		}
@@ -186,7 +183,7 @@ body.reviews {
 
 	.site {
 		@at-root #{&}-content {
-			max-width: 90rem;
+			max-width: 60rem;
 			margin: 0 auto;
 		}
 	}
@@ -195,7 +192,7 @@ body.reviews {
 		animation: shake 0.5s 1 ease-in-out forwards;
 		color: rgb(180, 180, 180);
 		width: 100%;
-		margin: 5rem auto;
+		margin: 1.5rem auto;
 		border-radius: 3px;
 		display: flex;
 		justify-content: space-between;
@@ -206,7 +203,7 @@ body.reviews {
 
 			&.right {
 				width: 55%;
-				background-color: #FF3C6C;
+				background-image: linear-gradient(to right bottom, #4a5f80, #979ba2, #a9abb0, #bbbbbe, #2d1d42);
 				clip-path: polygon(0% 8%,100% 0,100% 96%,0 92%);
 				border: 2px solid black;
 			}
