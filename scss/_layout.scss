@@ -15,10 +15,6 @@ body {
 
 main{
 	padding: 15px;
-	
-	a{
-		font-size: 18px;
-	}
 
 	>h2{
 		text-align: center;
@@ -37,14 +33,14 @@ main{
 			text-align: center;
 		}
 
-	    a {
+		a{
 			font-weight: bold;
 			border: 1px solid gray;
 			padding: 10px 15px;
 			color: black;
 			text-decoration: none;
 		}
-		  
+
 		.container{
 			@include imgContainer;
 			margin-bottom: 2rem;
@@ -72,7 +68,7 @@ main{
 			border-bottom: 2px solid black;
 			width: 80%;
 			padding: 40px 0 0 25px;
-	  	
+		  
 	 
 			h4 {
 	   			font-size: 33px;
@@ -112,6 +108,15 @@ main{
 				margin-top: 45px;
 				margin-right: 15px;
 				clip-path: polygon(0 5%,100% 0,100% 100%,0 84%);
+			}
+
+			@media screen and (max-width:930px){
+				display: block;
+
+				.about-blog{
+					width: 80%;
+					margin: auto 1rem;
+				}
 			}
 		}
 	}
@@ -159,7 +164,7 @@ main{
 				text-align: center;
 
 				img {
-					width: 360px;
+					max-width: 360px;
 					height: auto;
 				}
 			}
@@ -167,15 +172,14 @@ main{
 	}
 }
 
-body.home{
+body.home,
+body.projects{
 	main>h2{ 
 		margin-top: 1rem;
-		a{
-			font-family: 'Great Vibes', cursive;
-			font-size: 55px;
-			text-decoration: none;
-			color: #000;
-		}
+		font-family: 'Great Vibes', cursive;
+		font-size: 55px;
+		text-decoration: none;
+		color: #000;
 	}
 }
 
@@ -213,6 +217,103 @@ body.reviews {
 				@include background-image("opinion.jpg", center, cover); 
 				clip-path: polygon(0 0,100% 8%,100% 92%,0 96%);		
 				border: 2px solid black;
+			}
+		}
+	}
+}
+
+body.our-team{
+
+	blockquote{
+		max-width: 80%;
+		min-width: 15rem;
+		font-family: 'Great Vibes', cursive;
+		font-size: 1.5rem;
+		padding-top: 1.5rem;
+		margin: 0 auto;
+	}
+
+	section.grid{
+		margin-top: 2.5rem;
+		display: grid;
+    	grid-gap: 1.8rem;
+    	grid-template-columns: repeat(4, 1fr);
+		grid-auto-flow: dense;
+
+
+		@media screen and (max-width:699px){
+			.team{
+				grid-column: span 4;
+			}
+			aside{
+				background: none;
+			}
+		}	
+	}
+	section.team{
+		grid-column: span 3;
+		
+		@media screen and (max-width:699px){
+			img{
+				width: 10rem;
+			}
+		}
+
+		@media screen and (max-width:900px){
+			img{
+				width: 14rem;
+			}
+		}
+
+		h2{
+			margin: 1rem;
+		}
+
+		img{
+			max-width: 22rem;
+			padding: 0.5rem;
+			background: #FFF;
+			border: 2px solid #222;
+			border-radius: 35%;
+			box-shadow: 0 0 5rem 0.1rem rgba(0,0,0,0.5);
+			float: left;
+			margin: 0 1.8rem 1rem 0;
+		}
+	}
+
+	aside{
+		grid-column: span 1;
+		background-image: linear-gradient(to bottom, #4a5f80, #979ba2, #a9abb0, #bbbbbe, #2d1d42);
+		border-radius: 10px;
+		padding: 1rem;
+		max-height: 47%;
+
+		ul{
+			padding: 0.5rem 0;
+		
+			li{
+				display: block;
+				list-style: none outside;
+				padding: 0.7rem 0;
+				
+
+				a{
+					color: #000;
+					text-decoration: none;
+					padding-left: 5px;
+					font-size: 0.93rem;
+				}
+			}
+		}
+		button{
+			font-weight: bold;
+			border: 1px solid gray;
+			border-radius: 5px;
+			padding: 10px 15px;
+			
+			a{
+				text-decoration: none;
+				color: rgb(12, 2, 51);
 			}
 		}
 	}

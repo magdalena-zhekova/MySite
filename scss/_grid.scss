@@ -2,7 +2,7 @@ ul.grid {
     margin: 4rem 0 0 0;
     padding: 0;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: dense;
     
