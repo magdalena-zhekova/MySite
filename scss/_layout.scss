@@ -24,7 +24,6 @@ main{
 	}
 	.gallery {
 		padding: var(--spacing-site, 2em);
-		padding-bottom: 3rem;
 		text-align: center;
 
 		.gallery-wrapper{
@@ -32,7 +31,8 @@ main{
 			align-content: center;
 			justify-content: space-between;
 			flex-wrap: wrap;
-	  
+			margin-bottom: 3rem;
+
 			article{
 				text-align: center;
 
@@ -44,7 +44,7 @@ main{
 
 				.wrapper{
 					@include imgContainer;
-					margin-bottom: 2rem;
+					margin: auto;
 		
 		 			img{
 						width: 100%;
@@ -65,6 +65,7 @@ main{
 			font-weight: bold;
 			border: 1px solid gray;
 			border-radius: 5px;
+			margin-top: 2rem;
 			padding: 10px 25px;
 			color: black;
 			text-decoration: none;
