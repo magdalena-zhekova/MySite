@@ -203,7 +203,7 @@ body.reviews {
 	}
 	
 	section.review{
-		animation: shake 0.5s 1 ease-in-out forwards;
+		//animation: shake 0.5s 1 ease-in-out forwards;
 		color: rgb(180, 180, 180);
 		width: 100%;
 		margin: 1.5rem auto;
@@ -220,6 +220,7 @@ body.reviews {
 				background-image: linear-gradient(to right bottom, #4a5f80, #979ba2, #a9abb0, #bbbbbe, #2d1d42);
 				clip-path: polygon(0% 8%,100% 0,100% 96%,0 92%);
 				border: 2px solid black;
+				animation: openRight 2s 1 linear;
 
 				>h3{
 					text-align: center;
@@ -244,6 +245,7 @@ body.reviews {
 				@include background-image("opinion.jpg", center, cover); 
 				clip-path: polygon(0 0,100% 8%,100% 92%,0 96%);		
 				border: 2px solid black;
+				animation: openLeft 2s 1 linear;
 
 				@media screen and (max-width: 700px){
 					display: none;
@@ -351,6 +353,40 @@ body.our-team{
 			a{
 				text-decoration: none;
 				color: rgb(12, 2, 51);
+			}
+		}
+	}
+}
+
+body.cottage-charm,
+body.remodelling-a-classic,
+body.traditional-design{
+	img.right,
+	img.left{
+		max-width: 23rem;
+		padding: 0.5rem;
+		background: #FFF;
+		border: 2px solid #222;
+		border-radius: 35%;
+		box-shadow: 0 0 5rem 0.1rem rgba(0,0,0,0.5);
+		
+
+		&.right{
+			float: left;
+			margin: 1.7rem 1.9rem 1rem 1.2rem;
+
+			@media screen and (max-width: 540px){
+				float: none;
+			}
+		}
+
+		
+		&.left{
+			float: right;
+			margin: 1.8rem 0 1rem 1.8rem;
+
+			@media screen and (max-width: 540px){
+				float: none;
 			}
 		}
 	}

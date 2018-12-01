@@ -16,6 +16,7 @@ You might tend to shy away from traditional design out of fear that it's boring,
  </h2>
  <p>
 As you would have probably surmised, traditional design is inspired by, well, tradition. It's a timeless style taking cues from the 18th and 19th centuries, incorporating classic art, antiques, and pieces with history. Though you'll most often see traditional design influenced by European decor, it can actually incorporate elements from England, France, or even the far east. "Styles and pieces reflect historical design elements using natural materials and colors" says interior designer Erin Gates.
+<img class="left" src="{{ site.baseurl }}/img/project6.jpg" alt="project">
 </p>
 <h2>
 It Strives For Harmony And Order.
@@ -29,5 +30,6 @@ It's All In The Details.
 </h2>
  <p>
 Since order and consistency are essential, character comes in through details. Accessories are grand, like candle holders, vases, and chandeliers, and china, silver, and gold are commonly used. You'll find architectural details like crown molding, columns, and wood-paneling used through traditional design, which add a bit of opulence to a room without looking too ostentatious. Rooms are often centered around a focal point, like a fireplace or oil paintings.
+<img class="right" src="{{ site.baseurl }}/img/project13.jpg" alt="project">
 You won't find blinds or bare window coverings in traditional homes. Drapery and valances are classic, usually with heavy curtains. Upholstery, whether for curtains, pillows, or furniture, tend to favor high-end fabrics like silk, velvet, and leather, and bold pattern comes in the form of damask, plaid, or paisley. Many fabrics go one step further with trim. "On drapes, pillows, or upholstered goods—trim adds that little extra detail that shows that something was thoughtfully made" Gates says.
 </p>
