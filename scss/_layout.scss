@@ -212,7 +212,6 @@ body.reviews {
 		justify-content: space-between;
 
 		article{
-			//width: 50%;
 			padding: 5rem 2.3rem 1rem 4rem;
 
 			&.right {
@@ -220,7 +219,7 @@ body.reviews {
 				background-image: linear-gradient(to right bottom, #4a5f80, #979ba2, #a9abb0, #bbbbbe, #2d1d42);
 				clip-path: polygon(0% 8%,100% 0,100% 96%,0 92%);
 				border: 2px solid black;
-				animation: openRight 2s 1 linear;
+				animation: openRight 1.5s 1 linear;
 
 				>h3{
 					text-align: center;
@@ -245,7 +244,7 @@ body.reviews {
 				@include background-image("opinion.jpg", center, cover); 
 				clip-path: polygon(0 0,100% 8%,100% 92%,0 96%);		
 				border: 2px solid black;
-				animation: openLeft 2s 1 linear;
+				animation: openLeft 1.5s 1 linear;
 
 				@media screen and (max-width: 700px){
 					display: none;
